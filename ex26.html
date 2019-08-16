@@ -1,0 +1,122 @@
+<style>
+    .images{
+        width:70px;
+        border-radius: 70px;
+    }
+    .modalbox{
+        position: absolute;
+        top:-1000px;
+    }
+    
+</style>
+
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+<div class="navbar  navbar-expand-lg bg-warning text-white">
+
+   <img class="images" src="image33.png">
+       <ul class="navbar-nav text-capitalize mt-2 mr-auto">
+
+           <li>
+               <a class="nav-link text-white " href="home.html"><h4>home</h4></a>
+           </li>
+           <li>
+                <a class="nav-link text-white" href="home.html"><h4>features</h4></a>
+            </li>
+            <li>
+                    <a class="nav-link text-white" href="home.html"><h4>pricing</h4></a>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link " href="#"  data-toggle="dropdown">
+                 <h4 class="dropdown-toggle text-white">about</h4>
+                </a>
+                <div class="dropdown-menu">
+                  <a class="dropdown-item" href="#">Action</a>
+                  <a class="dropdown-item" href="#">Another action</a>
+                  <a class="dropdown-item" href="#">Something else here</a>
+                </div>
+              </li>
+       </ul>
+           <form class="form-inline mt-3 ">
+               <input class="form-control mx-2" placeholder="search..">
+               <button class="btn btn-primary" type="submit">search</button>
+           </form>
+    
+        </div>
+        
+        <ul class="nav justify-content-center bg-danger text-capitalize">
+            <li class="nav-item">
+                <a class="nav-link" href="#">
+                   link1
+                </a>
+            </li>
+            <li class="nav-item">
+                    <a class="nav-link" href="#">link2</a>
+                </li>
+                <li class="nav-item">
+                        <a class="nav-link" href="#">link3</a>
+                    </li>
+                    <li class="nav-item">
+                            <a class="nav-link" href="#">link4</a>
+                        </li>
+             <li class="nav-item">
+                   <a class="nav-link" href="#">link5</a>
+              </li>
+         <li class="nav-item">
+                  <a class="nav-link" href="#">link6</a>
+                 </li>
+          <li class="nav-item">
+                 <a class="nav-link" href="#">link7</a>
+          </li>
+
+        </ul>
+      
+       
+    <ul class="list-group"> 
+        <li class="list-group-item list-group-item-primary text-center">primary</li>
+        <li class="list-group-item list-group-item-secondary text-center">secondary</li>
+        <li class="list-group-item list-group-item-success text-center">success</li>
+        <li class="list-group-item list-group-item-danger text-center">danger</li>
+        <li class="list-group-item list-group-item-warning text-center">warning</li>
+        <li class="list-group-item list-group-item-info text-center">info</li>
+        <li class="list-group-item list-group-item-light text-center">light</li>
+        <li class="list-group-item list-group-item-dark text-center">dark</li>
+      </ul>
+
+      <div class="container my-3">
+        <button class="btn btn-primary" onclick="toggleclass('open-modal')">on click</button>
+        <div class="modal-content modalbox" id="open-modal">
+            <div class="modal-header">
+                <h3 class="text-uppercase ">
+                        vbm info tech
+                </h3> 
+                <button class="close" data-dismiss="modal" aria-label="close">
+                        <span aria-hidden="true" onclick="toggleclass2('open-modal')">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                A Dialog is small window that prompts the user to a decision or enter additional information. ... This method set the icon of the alert dialog box. ... Modify src/MainActivity.java file to add alert dialog code to launch the dialog.
+                
+            </div>
+            <div class="modal-footer">
+                <button class="btn btn-success">save</button>
+                <button class="btn btn-danger" onclick="toggleclass1('open-modal')">cancle</button>
+            </div>
+        </div>
+    </div>
+    <script>
+        function toggleclass(eleSelector){
+            $("#"+eleSelector).attr('style','top:-300px');
+        }
+        function toggleclass1(eleSelector){
+            $("#"+eleSelector).removeAttr('style','top:0px');
+        }
+        function toggleclass2(eleSelector){
+            $("#"+eleSelector).removeAttr('style','top:0px');
+        }
+    </script>    
+
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>

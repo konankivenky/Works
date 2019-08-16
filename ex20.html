@@ -1,0 +1,57 @@
+<style>
+    .inactive{
+        display:none;
+    }
+</style>
+
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+<div class="container">
+    <div class="card mt-5">
+        <div class="card">
+            <div class="card-header bg-success text-uppercase" onclick="toggleclass('abcd')">
+                java script
+            </div>
+            <div class="card-body inactive" id="abcd">
+                <p class="card-text">
+                        JavaScript, often abbreviated as JS, is a high-level, interpreted programming language that conforms to the ECMAScript specification. JavaScript has curly-bracket syntax, dynamic typing, prototype-based object-orientation, and first-class functions.
+                </p>
+
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-header bg-warning text-uppercase" onclick="toggleclass('abc')">
+                python
+            </div>
+            <div class="card-body inactive" id="abc">
+                <p class="card-text">
+                        Python is an interpreted, high-level, general-purpose programming language. Created by Guido van Rossum and first released in 1991, Python's design philosophy emphasizes code readability with its notable use of significant whitespace.
+
+                </p>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-header bg-primary text-uppercase" onclick="toggleclass('ab')">
+                .net
+            </div>
+            <div class="card-body inactive" id="ab">
+                <p class="card-text">
+                        .NET Framework is a software framework developed by Microsoft that runs primarily on Microsoft Windows. It includes a large class library named as Framework Class Library and provides language interoperability across several programming languages. 
+                </p>
+            </div>
+         </div>
+    </div>
+</div>
+<script>
+    function toggleclass(eleSelector){
+        if($("#"+eleSelector).hasClass('inactive'))
+        $("#"+eleSelector).removeClass('inactive');
+        else
+        $("#"+eleSelector).addClass('inactive');
+    }
+</script>
+
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>

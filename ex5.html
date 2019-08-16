@@ -1,0 +1,120 @@
+<style>
+    .main-container{
+        padding: 0px;
+        margin:0px;
+        width:100%;
+    }
+    .header-container{
+        background:salmon;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding:10px;
+        position: fixed;
+        top:0;
+        width:100%;
+        max-height: 70px;
+        min-height: 70px;
+    }
+    .header-container>div{
+        font-size: 20px;
+
+
+    }
+    .header-container>img{
+        width:60px;
+    }
+    .navbar{
+        text-align: center;
+        border-bottom: 1px solid gray;
+        margin-top:95px;
+        width:100%;
+       
+    }
+    .navbar>ul{
+        list-style: none;
+
+    }
+    .navbar>ul>li{
+        display:inline-block;
+        padding: 20px;
+    }
+    .body-container{
+        padding:0px;
+        margin:0px;
+    
+    
+    }
+    .cart-container{
+       width:100%;
+       height:100vh;
+
+    }
+    .left-container{
+        width:70%;
+        height: 500px;
+        border:1px solid black;
+    margin: 5px;
+      float: left;
+       
+    }
+    .right-container{
+        width: 28%;
+    height: 500px;
+    margin: 5px;
+    border: 1px solid black;
+    float: left;
+    background: teal
+    }
+    .content{
+        width:270px;
+        height:200px;
+        border:1px solid gray;
+        float:left;
+        margin:1rem;
+        background: slateblue;
+    }
+   
+    @media only screen and (max-width:600px){
+        .navbar>ul>li>a{
+            flex-direction: column;
+            display: block;
+            width:100%;
+        }
+        }
+</style>
+<div class="main-container">
+    <div class="header-container">
+        <div>vbm</div>
+        <img src="image15.jpg">
+    </div>
+    <div class="navbar">
+            <ul>
+                <li>HOME</li>
+                <li>SERVICSE</li>
+                <li>ABOUT</li>
+            </ul>
+    </div>
+    <div class="body-container">
+        <div class="cart-container">
+            <div class="left-container">
+                    <div class="content">
+
+                    </div>
+                    <div class="content">
+                        
+                     </div>
+                     <div class="content">
+                        
+                     </div>
+                     <div class="content">
+                        
+                    </div>
+            </div>
+        
+            <div class="right-container">
+            
+            </div>
+        </div>
+    </div>
+</div>
